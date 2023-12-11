@@ -1,0 +1,10 @@
+*.crt
+.DS_Store
+*.env
+.idea/
+*.key
+*.log
+node_modules/
+tmp/
+*.tmp
+.vscode/

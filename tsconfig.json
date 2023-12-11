@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "target": "es6",
+      "module": "commonjs",
+      "newLine": "lf",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitAny": false,
+      "resolveJsonModule": true,
+      "strict": true,
+      "sourceMap": true,
+      "useUnknownInCatchVariables": false,
+    }
+  }
