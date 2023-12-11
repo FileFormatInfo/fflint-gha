@@ -9,7 +9,7 @@ export async function install(version: string): Promise<string> {
     const osName = getOs();
     const cpu = getArch();
     const ext = os.platform() == 'win32' ? 'zip' : 'tar.gz';
-    const downloadUrl = `https://github.com/FileFormatInfo/fflint/releases/download/${version}/fflint_${osName}_${cpu}.${ext}`;
+    const downloadUrl = `https://github.com/FileFormatInfo/fflint/releases/${version}/download/fflint_${osName}_${cpu}.${ext}`;
 
     core.info(`Downloading ${downloadUrl}`);
     const downloadPath: string = await tc.downloadTool(downloadUrl);
@@ -33,7 +33,7 @@ export async function install(version: string): Promise<string> {
     let realVersion = version;
     if (version == 'latest') {
         //LATER: run "fflint version --output=json" to get the real version
-        realVersion = '0.0.12'
+        realVersion = '0.0.13'
     } else {
         realVersion = realVersion.replace(/^v/, '');
     }

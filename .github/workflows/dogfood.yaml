@@ -1,0 +1,26 @@
+name: "dogfooding"
+
+# Why is this called "dogfooding"? https://en.wikipedia.org/wiki/Eating_your_own_dog_food
+
+on:
+  push:
+
+  workflow_dispatch:
+
+jobs:
+  dogfooding:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run fflint
+        uses: FileFormatInfo/fflint-gha@main
+        with:
+          command: ext
+          files: "**/*"
+          args: "--output=markdown"
+          version: "latest"
+
