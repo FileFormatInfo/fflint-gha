@@ -1,0 +1,8 @@
+#
+# _config.yml for gha.fflint.org
+#
+
+exclude: [ "CNAME", "**/.gitkeep", "tmp", "**/*_src*" ]
+markdown: kramdown
+production_url: https://gha.fflint.org
+title: "fflint Github Action"

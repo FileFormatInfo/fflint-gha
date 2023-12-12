@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="referrer" content="unsafe-url" />
+        <title>fflint Github Action</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    </head>
+    <body>
+        <h1>
+            <img alt="fflint-gha logo" src="/favicon.svg" style="height:4.0rem;vertical-align: middle;" />
+            fflint Github Action
+        </h1>
+
+        <p>
+            This is a Github Action that runs <a href="https://www.fflint.org/">fflint</a> (a file format linter) on your repository.
+        </p>
+
+        <p>
+            Parameters:
+            <ul>
+                <li><code>args</code> - fflint args, either <a href="https://www.fflint.org/flags">global</a> or command-specific</li>
+                <li><code>command</code> - which fflint <a href="https://www.fflint.org/commands/">command</a> to run</li>
+                <li><code>files</code> <a href="https://www.fflint.org/files">files</a> to check</li>
+                <li><code>version</code> - to force a specific <a href="https://github.com/FileFormatInfo/fflint/releases">version</a> of fflint (or <code>latest</code>)</li>
+            </ul>
+        </p>
+
+        <p>
+            Example:
+            <a href="https://github.com/FileFormatInfo/fflint-gha/blob/main/.github/workflows/dogfood.yaml">YAML</a>
+            | <a href="https://github.com/FileFormatInfo/fflint-gha/actions/workflows/dogfood.yaml">results</a>
+        </p>
+
+        <p>
+            Links:
+            <a href="https://www.fflint.org/">fflint website</a>
+            | <a href="https://github.com/FileFormatInfo/fflint-gha">fflint-gha source</a>
+            | <a href="https://github.com/FileFormatInfo/fflint">fflint source</a>
+        </p>
+
+        <p><small>
+            Copyright &copy; 2023<!-- COPYRIGHTYEAR --> by <a href="https://andrew.marcuse.info/contact.html">Andrew Marcuse</a>
+        </small></p>
+    </body>
+</html>

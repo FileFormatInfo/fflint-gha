@@ -1,10 +1,12 @@
 *.crt
+docs/.jekyll-cache
 .DS_Store
 *.env
 .idea/
 *.key
 *.log
 node_modules/
+_site/
 tmp/
 *.tmp
 .vscode/

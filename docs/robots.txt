@@ -1,0 +1,8 @@
+#
+# robots.txt for fflint-gha
+#
+# not much here, but feel free to index it!
+#
+
+User-Agent: *
+Allow: /
